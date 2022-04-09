@@ -1,10 +1,12 @@
 export const User = ({user}) => {
     return (
         <div>
-                <span>{user.username}</span>
-                <span>{user.email}</span>
-                <span>{user.name}</span>
-                <hr/>
+            <div>
+                <h3>{user.username}</h3>
+                <p>{user.email}</p>
+                <p>{user.name}</p>
+            </div>
         </div>
     );
 }
+

@@ -12,9 +12,12 @@ export const Comments = () => {
 
     return (
         <div>
+            <ol>
             {
                 comments && comments.map((comment) => <Comment key={comment.name} comment={comment}/>)
             }
+
+            </ol>
         </div>
     );
 }

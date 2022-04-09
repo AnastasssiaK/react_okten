@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 
 import {usersService} from "../../services";
 import {User} from "../User/User";
+import '../../App.css';
 
 export const Users = () => {
     const [users, setUsers] = useState(null);
@@ -11,7 +12,7 @@ export const Users = () => {
     }, []);
 
     return (
-        <div>
+        <div className={'users'} >
             {
                 users && users.map((user)=> <User key={user.id} user={user}/>)
             }

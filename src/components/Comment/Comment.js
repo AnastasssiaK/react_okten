@@ -1,8 +1,9 @@
+import '../../App.css';
+
 export const Comment = ({comment}) => {
     return (
-        <div>
-            <span>{comment.body}</span>
-            <hr/>
+        <div className={'comment'}>
+            <li>{comment.body}</li>
         </div>
     );
 }

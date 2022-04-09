@@ -1,8 +1,9 @@
 export const Post = ({post}) => {
     return (
         <div>
-            <span>{post.title}</span>
-            <hr/>
+            <ul>
+            <li>{post.title}</li>
+            </ul>
         </div>
     );
 }

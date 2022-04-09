@@ -4,10 +4,10 @@ import './App.css';
 const App = () => {
     return (
         <div className={'wrap'}>
-            <div className={'users_posts'}>
-                <Users/>
-                <Posts/>
-            </div>
+            <Users/>
+            <hr/>
+            <Posts/>
+            <hr/>
             <Comments/>
         </div>
     );
