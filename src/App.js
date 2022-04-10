@@ -12,7 +12,7 @@ const actors = [
 function App() {
     return (
         <div>
-            {/*{actors.map(actor=><Actor key={actor.id} name={actor.name} img={actor.img}/>)}*/}
+            {actors.map(actor=><Actor key={actor.id} name={actor.name} img={actor.img}/>)}
             <Users/>
         </div>
     );
