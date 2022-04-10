@@ -4,10 +4,10 @@ import { Comment } from '../Comment/Comment';
 import { commentsService } from '../../services';
 
 export const Comments = () => {
-    const [comments, setComments] = useState(null);
+    const [comments, setComments] = useState([]);
 
     useEffect(() => {
-        commentsService.getAllComments().then(value => setComments(value));
+        commentsService.getAllComments().then(value => setComments([...value]));
     }, []);
 
     return (
