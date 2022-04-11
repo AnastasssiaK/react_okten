@@ -7,10 +7,10 @@ import {Form2} from "./components/Form2/Form2";
 const App = () => {
     const [singleUser, setSingleUser] = useState(null);
     return (
-        <div>
-            {/*{singleUser && <SingleUser user={singleUser} />}*/}
-            {/*<Users getUser={setSingleUser}/>*/}
-            {/*<Form1/>*/}
+        <div className={css.wrap}>
+            {singleUser && <SingleUser user={singleUser} />}
+            <Users getUser={setSingleUser}/>
+            <Form1/>
             <Form2/>
         </div>
     );
