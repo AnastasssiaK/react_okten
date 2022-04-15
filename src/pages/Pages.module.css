@@ -1,0 +1,22 @@
+.users, .posts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.users_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5%;
+}
+
+.users_details_and_posts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.post_by_UserId {
+    padding: 20px;
+    width: 500px;
+}

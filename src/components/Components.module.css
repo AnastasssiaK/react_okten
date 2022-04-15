@@ -1,0 +1,40 @@
+.user {
+    background: deeppink;
+    color: white;
+    border: 2px solid black;
+    padding: 0 20px;
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user a {
+    color: white;
+}
+.users_details {
+    border: 5px solid deeppink;
+    padding: 20px 100px 40px;
+}
+.users_details h4 {
+text-align: center;
+}
+.users_details button {
+    background: deeppink;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.users_details button:hover {
+    background: transparent;
+    color: deeppink;
+    transition: 0.3s;
+}
+.users_details a {
+    text-decoration: none;
+}
