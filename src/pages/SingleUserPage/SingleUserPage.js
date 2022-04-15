@@ -2,7 +2,7 @@ import {useLocation, useParams, Outlet} from "react-router-dom";
 import {useEffect, useState} from "react";
 
 import {userService} from "../../services";
-import {UserDetails} from "../../components";
+import {Loading, UserDetails} from "../../components";
 import css from '../Pages.module.css';
 
 const SingleUserPage = () => {
@@ -20,7 +20,11 @@ const SingleUserPage = () => {
     return (
         <div className={css.users_details_and_posts}>
             <div>
-                {user && <UserDetails userDetails={user}/>}
+                {
+                    user
+                        ? user && <UserDetails userDetails={user}/>
+                        : <Loading/>
+                }
             </div>
             <div className={css.post_by_UserId}>
                 <Outlet/>

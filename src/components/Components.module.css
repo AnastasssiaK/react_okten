@@ -30,11 +30,29 @@ text-align: center;
     border: 2px solid black;
     cursor: pointer;
 }
-.users_details button:hover {
+.users_details button:hover,.post button:hover {
     background: transparent;
     color: deeppink;
     transition: 0.3s;
 }
 .users_details a {
     text-decoration: none;
+}
+.post button {
+background: deeppink;
+    padding: 5px 10px;
+    border: 2px solid black;
+    color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+button {
+    cursor: pointer;
+}
+.loading {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
 }

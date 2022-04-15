@@ -14,3 +14,8 @@
     color: deeppink;
     text-shadow:  1px 0 2px white;
 }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}

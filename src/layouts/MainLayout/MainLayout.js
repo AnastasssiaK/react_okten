@@ -3,7 +3,7 @@ import {Outlet, NavLink} from "react-router-dom";
 
 const MainLayout = () => {
     return (
-        <div>
+        <div className={css.wrapper}>
             <div className={css.header}>
                 <NavLink to={"/users"}>Users</NavLink>
                 <NavLink to={"/posts"}>Posts</NavLink>
