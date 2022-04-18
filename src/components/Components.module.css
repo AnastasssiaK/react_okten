@@ -9,16 +9,20 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .user a {
     color: white;
 }
+
 .users_details {
     border: 5px solid deeppink;
-    padding: 20px 100px 40px;
+    padding: 20px 120px 40px;
 }
+
 .users_details h4 {
-text-align: center;
+    text-align: center;
 }
+
 .users_details button {
     background: deeppink;
     color: white;
@@ -30,29 +34,43 @@ text-align: center;
     border: 2px solid black;
     cursor: pointer;
 }
-.users_details button:hover,.post button:hover {
+
+.users_details button:hover, .post button:hover, .post_details button {
     background: transparent;
     color: deeppink;
     transition: 0.3s;
 }
-.users_details a {
+
+.users_details a, .post_details a {
     text-decoration: none;
 }
-.post button {
-background: deeppink;
+
+.post button, .post_details button {
+    background: deeppink;
     padding: 5px 10px;
     border: 2px solid black;
     color: white;
     border-radius: 15px;
     margin-left: 20px;
 }
+
 button {
     cursor: pointer;
 }
+
 .loading {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: xx-large;
+}
+
+.post_details {
+    padding: 20px;
+}
+
+.post_details button {
+    display: flex;
+    margin: 20PX auto;
 }

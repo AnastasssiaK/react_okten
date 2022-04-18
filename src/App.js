@@ -1,7 +1,7 @@
 import {Routes, Route, Navigate} from "react-router-dom";
 
 import {MainLayout} from "./layouts";
-import {UsersPage, PostsPage, NotFoundPage, SingleUserPage} from './pages';
+import {UsersPage, PostsPage, NotFoundPage, SingleUserPage, SinglePostPage, CommentsPage} from './pages';
 
 const App = () => {
     return (
@@ -13,7 +13,11 @@ const App = () => {
                         <Route path={'posts'} element={<PostsPage/>}/>
                     </Route>
                 </Route>
-                <Route path={'posts'} element={<PostsPage/>}/>
+                <Route path={'posts'} element={<PostsPage/>}>
+                    <Route path={':id'} element={<SinglePostPage/>}>
+                        <Route path={'comments'} element={<CommentsPage/>}/>
+                    </Route>
+                </Route>
                 <Route path={'*'} element={<NotFoundPage/>}/>
             </Route>
         </Routes>
