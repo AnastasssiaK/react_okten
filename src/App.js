@@ -27,8 +27,11 @@ const reducer = (state, action) => {
             return {...state, count2: 0}
         case 'reset3':
             return {...state, count4: 0}
-        //     case 'set':
-        //         return {...state, count1: action.payload: 10}
+        default:
+            console.error('невідомий тип');
+            return state;
+        //case 'set':
+        //  return {...state, count1: action.payload: 10}
     }
 }
 
